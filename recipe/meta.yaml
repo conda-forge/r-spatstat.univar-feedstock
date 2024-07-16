@@ -1,4 +1,4 @@
-{% set version = '2.0-3' %}
+{% set version = "3.0-0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/spatstat.univar_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spatstat.univar/spatstat.univar_{{ version }}.tar.gz
-  sha256: e8935f695ae21c4b10bf0f758e3f0995315350fd310073bf05dffdbc253c5653
+  sha256: 00bc501d9bec32231207f0562433193bd680606ce465131caa5e2704b4ff4771
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -47,10 +47,7 @@ about:
   home: http://spatstat.org/
   dev_url: https://github.com/spatstat/spatstat.univar
   license: GPL-2.0-or-later
-  summary: Estimation of one-dimensional probability distributions including kernel density estimation,
-    weighted empirical cumulative distribution functions, Kaplan-Meier and reduced-sample
-    estimators for right-censored data, heat kernels, kernel properties, quantiles and
-    integration.
+  summary: Estimation of one-dimensional probability distributions including kernel density estimation, weighted empirical cumulative distribution functions, Kaplan-Meier and reduced-sample estimators for right-censored data, heat kernels, kernel properties, quantiles and integration.
   license_family: GPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
