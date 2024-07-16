@@ -12,7 +12,7 @@ source:
   sha256: 00bc501d9bec32231207f0562433193bd680606ce465131caa5e2704b4ff4771
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -22,6 +22,7 @@ build:
 requirements:
   build:
     - cross-r-base {{ r_base }}  # [build_platform != target_platform]
+    - r-spatstat.utils           # [build_platform != target_platform]
     - {{ compiler('c') }}        # [not win]
     - {{ stdlib("c") }}          # [not win]
     - {{ compiler('m2w64_c') }}  # [win]
@@ -33,10 +34,10 @@ requirements:
     - {{ posix }}zip             # [win]
   host:
     - r-base
-    - r-spatstat.utils >=3.0_2
+    - r-spatstat.utils >=3.0_5
   run:
     - r-base
-    - r-spatstat.utils >=3.0_2
+    - r-spatstat.utils >=3.0_5
 
 test:
   commands:
