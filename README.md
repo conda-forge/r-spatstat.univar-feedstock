@@ -13,6 +13,8 @@ Package license: GPL-2.0-or-later
 
 Summary: Estimation of one-dimensional probability distributions including kernel density estimation, weighted empirical cumulative distribution functions, Kaplan-Meier and reduced-sample estimators for right-censored data, heat kernels, kernel properties, quantiles and integration.
 
+Development: https://github.com/spatstat/spatstat.univar
+
 About r-spatstat.univar
 -----------------------
 
@@ -21,6 +23,8 @@ Home: http://spatstat.org/
 Package license: GPL-2.0-or-later
 
 Summary: Estimation of one-dimensional probability distributions including kernel density estimation, weighted empirical cumulative distribution functions, Kaplan-Meier and reduced-sample estimators for right-censored data, heat kernels, kernel properties, quantiles and integration.
+
+Development: https://github.com/spatstat/spatstat.univar
 
 Current build status
 ====================
