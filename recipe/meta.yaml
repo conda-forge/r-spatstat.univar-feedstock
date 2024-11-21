@@ -12,12 +12,14 @@ source:
   sha256: d52c08147a77a3ec03d3f9b66a00d5f43cea5b760fec2652c3d16142bce0a88b
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
   missing_dso_whitelist:
-    - '*/R.dll'  # [win]
+    - '*/R.dll'        # [win]
+    - '*/Rblas.dll'    # [win]
+    - '*/Rlapack.dll'  # [win]
 
 requirements:
   build:
@@ -34,10 +36,10 @@ requirements:
     - {{ posix }}zip             # [win]
   host:
     - r-base
-    - r-spatstat.utils >=3.0_5
+    - r-spatstat.utils >=3.1_1
   run:
     - r-base
-    - r-spatstat.utils >=3.0_5
+    - r-spatstat.utils >=3.1_1
 
 test:
   commands:
