@@ -36,10 +36,10 @@ requirements:
     - {{ posix }}zip             # [win]
   host:
     - r-base
-    - r-spatstat.utils >=3.1_1
+    - r-spatstat.utils >=3.1_2
   run:
     - r-base
-    - r-spatstat.utils >=3.1_1
+    - r-spatstat.utils >=3.1_2
 
 test:
   commands:
