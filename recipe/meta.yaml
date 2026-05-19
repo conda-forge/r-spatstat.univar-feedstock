@@ -3,7 +3,7 @@
 
 package:
   name: r-spatstat.univar
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -36,10 +36,10 @@ requirements:
     - {{ posix }}zip             # [win]
   host:
     - r-base
-    - r-spatstat.utils >=3.1_2
+    - r-spatstat.utils >=3.2_3
   run:
     - r-base
-    - r-spatstat.utils >=3.1_2
+    - r-spatstat.utils >=3.2_3
 
 test:
   commands:
