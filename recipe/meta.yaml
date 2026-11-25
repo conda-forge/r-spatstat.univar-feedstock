@@ -1,15 +1,15 @@
-{% set version = "3.2-0" %}
+{% set version = "3.2-1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-spatstat.univar
-  version: "{{ version|replace("-", "_") }}"
+  version: {{ version|replace("-", "_") }}
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/spatstat.univar_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spatstat.univar/spatstat.univar_{{ version }}.tar.gz
-  sha256: 8d2e7e69ab09e563ae902f21045cdfcd58a8fc0664150eac2ef712516cda7b0b
+  sha256: d8cae208f65bea09f9e79fd8e2f5e2a29828e4fde61b242812f521cec59b0df3
 
 build:
   number: 0
